@@ -1,0 +1,201 @@
+html,
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1{
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+
+header .header--wrapper{
+  height: 126px;
+  line-height: 126px;
+  padding: 0;
+}
+
+header a{ 
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 220px !important;
+  flex: auto !important;
+  height: 60px !important;
+}
+
+.minting--details h1{
+  font-weight: 600;
+  margin-block-end: 0;
+}
+
+.minting--title{
+  margin-block-end: 32px;
+}
+
+.minting--title .btn {
+  max-width:210px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btn {
+  height: 50px;
+  line-height: 48px;
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 37px;
+}
+
+.counter--container{
+  padding: 46px 32px;
+  background: #181E31;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  margin-block-end: 24px;
+}
+
+.counter--slider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter--slider input {
+  appearance: none;
+  background: transparent;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  background: #050023;
+  border: 2px solid #0070F3;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  background: #050023;
+  border: 2px solid #0070F3;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  background: #050023;
+  border: 2px solid #0070F3;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #2B2841;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #2B2841;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #2B2841;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2B2841;
+  border: 3px solid #2B2841;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #2B2841;
+}
+input[type=range]::-ms-fill-upper {
+  background: #2B2841;
+  
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #2B2841;
+}
+
+.counter--slider label {
+  margin-block-start: 36px;
+  margin-block-end: 40px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.counter--container h4 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #DBDBDB;
+  margin-bottom: 0;
+}
+
+.total-supply-container{
+  padding: 32px;
+  background: #181E31;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  margin-block-end: 32px;
+}
+
+.contract--links hr{
+  display: block;
+  width: 2px;
+  height: 24px;
+  background-color: #727272;
+  opacity: 1;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+  h1{
+    font-size: 32px;
+  }
+  .minting--image{
+    order: -1;
+    margin-block-end: 28px;
+  }
+  header .header--wrapper{
+    justify-content:center;
+  }
+}
